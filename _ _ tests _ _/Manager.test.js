@@ -10,11 +10,11 @@ test('creates an employee object', () => {
   });
 
 
-//   test("gets manager's office number", () => {
-//     const manager = new Manager('John', '25', '2', 'john@john.com');
+  test("gets manager's office number", () => {
+    const manager = new Manager('John', '25', '2', 'john@john.com');
 
-//     expect(manager.getEmail()).toEqual(expect.stringContaining(manager.office));
-//   });
+    expect(manager.getOffice()).toEqual(expect.stringContaining(manager.office));
+  });
 
  
   test("gets manager's role", () => {
