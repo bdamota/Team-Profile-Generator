@@ -10,15 +10,15 @@ test('creates an engineer object', () => {
   });
 
 
-//   test("gets engineer github username", () => {
-//     const engineer = new Engineer('Jane', '60', 'janegit', 'jane@jane.com');
+  test("gets engineer github username", () => {
+    const engineer = new Engineer('Jane', '60', 'janegit', 'jane@jane.com');
 
-//     expect(engineer.getOffice()).toEqual(expect.stringContaining(engineer.github));
-//   });
+    expect(engineer.getGitHub()).toEqual(expect.stringContaining(engineer.github));
+  });
 
  
-//   test("gets engineer role", () => {
-//     const engineer = new Engineer('Jane', '60', 'janegit', 'jane@jane.com');
+  test("gets engineer role", () => {
+    const engineer = new Engineer('Jane', '60', 'janegit', 'jane@jane.com');
 
-//     expect(engineer.getRole()).toEqual(expect.stringContaining('Engineer'));
-//   });
+    expect(engineer.getRole()).toEqual(expect.stringContaining('Engineer'));
+  });
