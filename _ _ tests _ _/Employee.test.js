@@ -15,11 +15,11 @@ test('creates an employee object', () => {
     expect(employee.getName()).toEqual(expect.stringContaining(employee.name));
   });
 
-//   test("gets employee's id", () => {
-//     const employee = new Employee('Dave', '45', 'dave@dave.com');
+  test("gets employee's id", () => {
+    const employee = new Employee('Dave', '45', 'dave@dave.com');
 
-//     expect(employee.getID()).toEqual(expect.stringContaining(employee.id));
-//   });
+    expect(employee.getID()).toEqual(expect.stringContaining(employee.id));
+  });
 
 //   test("gets employee's email", () => {
 //     const employee = new Employee('Dave', '45', 'dave@dave.com');
