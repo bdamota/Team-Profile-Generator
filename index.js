@@ -11,7 +11,7 @@ const promptManager = () => {
       {
         type: 'input',
       name: 'name',
-      message: 'What your Team Manager\'s name? (Required)',
+      message: 'What is your Team Manager\'s name? (Required)',
       validate: managerNameInput => {
         if (managerNameInput) {
           return true;
@@ -88,7 +88,7 @@ const promptManager = () => {
             {
                 type: 'input',
                 name: 'name',
-                message: 'What your Engineer\'s name? (Required)',
+                message: 'What is your Engineer\'s name? (Required)',
                 validate: engineerNameInput => {
                     if (engineerNameInput) {
                       return true;
@@ -101,7 +101,7 @@ const promptManager = () => {
              {
                 type: 'input',
                 name: 'id',
-                message: 'Enter your Engineer\'s employee id? (Required)',
+                message: 'Enter your Engineer\'s employee id. (Required)',
                 validate: engineerIdInput => {
                     if (engineerIdInput ) {
                        return true;
@@ -114,7 +114,7 @@ const promptManager = () => {
              {
                 type: 'input',
                 name: 'email',
-                message: 'Enter your Engineer\'s email? (Required)',
+                message: 'Enter your Engineer\'s email. (Required)',
                 validate: engineerEmailInput => {
                     if (engineerEmailInput) {
                         return true;
@@ -127,7 +127,7 @@ const promptManager = () => {
               {
                 type: 'input',
                 name: 'github',
-                message: 'Enter your Engineer\'s github username? (Required)',
+                message: 'Enter your Engineer\'s github username. (Required)',
                 validate: engineerGithubInput => {
                      if (engineerGithubInput) {
                         return true;
