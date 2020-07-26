@@ -69,15 +69,6 @@ const promptManager = () => {
    };
   
   const promptEmployee =managerData => {
-    // If there's no 'projects' array property, create one
-    if (!managerData.projects) {
-    managerData.projects = [];
-  }
-    console.log(`
-  ======================
-     Add a New Member
-  ======================
-  `);
      if (!managerData.engineers) {
      managerData.engineers = [];
   }
