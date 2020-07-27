@@ -19,7 +19,7 @@ const writeFile = fileContent => {
     });
   };
 
-  const copyFile = copyFileResponse =>  {
+const copyFile = copyFileResponse =>  {
     return new Promise((resolve, reject) => {
         fs.copyFile('./dist/index.html', './dist/copy.html', copyFileResponse, err => {
             // if there's an error, reject the Promise and send the error to the Promise's `.catch()` method
@@ -35,6 +35,7 @@ const writeFile = fileContent => {
             message: 'File created!'
           });
         });
-    })}; 
+      })
+    }; 
 
     module.exports = { writeFile, copyFile };

@@ -10,14 +10,14 @@ test('creates a manager object', () => {
   });
 
 
-  test("gets manager's office number", () => {
+test("gets manager's office number", () => {
     const manager = new Manager('John', '25', '2', 'john@john.com');
 
     expect(manager.getOffice()).toEqual(expect.stringContaining(manager.office));
   });
 
  
-  test("gets manager's role", () => {
+test("gets manager's role", () => {
     const manager = new Manager('John', '25', '2', 'john@john.com');
 
     expect(manager.getRole()).toEqual(expect.stringContaining('Manager'));

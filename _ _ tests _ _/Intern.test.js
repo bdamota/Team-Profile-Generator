@@ -10,14 +10,14 @@ test('creates an intern object', () => {
   });
 
 
-  test("gets intern school", () => {
+test("gets intern school", () => {
     const intern = new Intern('Anne', '80', 'USC', 'anne@anne.com');
 
     expect(intern.getSchool()).toEqual(expect.stringContaining(intern.school));
   });
 
  
-  test("gets intern role", () => {
+test("gets intern role", () => {
     const intern= new Intern('Anne', '80', 'USC', 'anne@anne.com');
 
     expect(intern.getRole()).toEqual(expect.stringContaining('Intern'));
